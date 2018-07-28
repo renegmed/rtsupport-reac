@@ -1,0 +1,38 @@
+import React, {Component} from 'react';
+import ChannelForm from './channelForm';
+import ChannelList from './channelList';
+
+class ChannelSection extends Component{
+  render(){
+
+    const {setChannel, addChannel} = this.props;
+    console.log("----- ChannelSection.render() --------");
+    console.log("  ++++ typeof setChannel +++++");
+    console.log(typeof setChannel);   // function definded in app.js
+
+    console.log("  ++++ typeof addChannel +++++");
+    console.log(typeof addChannel);   // function defined in app.js
+
+    return (
+      <div className='support panel panel-primary'>
+        <div className='panel-heading'>
+          <strong>Channels</strong>
+        </div>
+        <div className='panel-body channels'>
+          <ChannelList {...this.props} />
+          <ChannelForm {...this.props} />
+        </div>
+      </div>
+      
+    )
+  }
+}
+
+// ChannelSection.propTypes = {
+//   channels: React.PropTypes.array.isRequired,
+//   setChannel: React.PropTypes.func.isRequired,
+//   addChannel: React.PropTypes.func.isRequired,
+//   activeChannel: React.PropTypes.object.isRequired
+// }
+
+export default ChannelSection

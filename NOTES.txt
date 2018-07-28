@@ -1,0 +1,10 @@
+$ nvm use --lts
+
+$ npm init
+
+$ npm install --save babel-core babel-polyfill react react-dom
+
+$ npm install --save-dev babel-loader babel-preset-es2015 babel-preset-react webpack webpack-cli webpack-dev-server
+
+
+
