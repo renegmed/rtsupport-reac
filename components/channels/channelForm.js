@@ -11,12 +11,12 @@ class ChannelForm extends Component{
   render(){
 
     const {setChannel, addChannel} = this.props;
-    console.log("----- ChannelForm.render() --------");
-    console.log("  ++++ typeof setChannel +++++");
-    console.log(typeof setChannel);   // function definded in app.js
+    // console.log("----- ChannelForm.render() --------");
+    // console.log("  ++++ typeof setChannel +++++");
+    // console.log(typeof setChannel);   // function definded in app.js
 
-    console.log("  ++++ typeof addChannel +++++");
-    console.log(typeof addChannel);   // function defined in app.js
+    // console.log("  ++++ typeof addChannel +++++");
+    // console.log(typeof addChannel);   // function defined in app.js
 
     return (
       <form onSubmit={this.onSubmit.bind(this)}>

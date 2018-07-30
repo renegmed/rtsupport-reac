@@ -4,32 +4,32 @@ class Channel extends Component{
   onClick(e){
     e.preventDefault();
     const {setChannel, channel} = this.props;
-    console.log("------ Channel.onClick() -------");
+    // console.log("------ Channel.onClick() -------");
     
-    console.log("  +++ this.props ++++");
-    console.log(this.props);
+    // console.log("  +++ this.props ++++");
+    // console.log(this.props);
 
-    console.log("  +++ setChannel ++++");
-    console.log(setChannel);
+    // console.log("  +++ setChannel ++++");
+    // console.log(setChannel);
 
-    console.log("  +++ channel ++++");
-    console.log(channel);
+    // console.log("  +++ channel ++++");
+    // console.log(channel);
 
     setChannel(channel);
   }
   render(){
-    console.log("------ Channel.render() -------");
+    // console.log("------ Channel.render() -------");
     const {channel, activeChannel} = this.props;
-    console.log("  +++ channel ++++");
-    console.log(channel);
+    // console.log("  +++ channel ++++");
+    // console.log(channel);
 
-    console.log("  +++ activeChannel ++++");
-    console.log(activeChannel);
+    // console.log("  +++ activeChannel ++++");
+    // console.log(activeChannel);
     
     const active = channel === activeChannel ? 'active' : '';
   
-    console.log("  +++ active ++++");
-    console.log(active);
+    // console.log("  +++ active ++++");
+    // console.log(active);
 
     return (
       <li className={active}>

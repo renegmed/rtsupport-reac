@@ -6,12 +6,12 @@ class ChannelSection extends Component{
   render(){
 
     const {setChannel, addChannel} = this.props;
-    console.log("----- ChannelSection.render() --------");
-    console.log("  ++++ typeof setChannel +++++");
-    console.log(typeof setChannel);   // function definded in app.js
+    // console.log("----- ChannelSection.render() --------");
+    // console.log("  ++++ typeof setChannel +++++");
+    // console.log(typeof setChannel);   // function definded in app.js
 
-    console.log("  ++++ typeof addChannel +++++");
-    console.log(typeof addChannel);   // function defined in app.js
+    // console.log("  ++++ typeof addChannel +++++");
+    // console.log(typeof addChannel);   // function defined in app.js
 
     return (
       <div className='support panel panel-primary'>
