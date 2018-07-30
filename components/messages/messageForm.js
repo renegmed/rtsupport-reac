@@ -11,7 +11,7 @@ export default class MessageForm extends Component {
     render() {
         let input;
         console.log("====== MessageForm this.props.activeChannel: ", this.props.activeChannel);
-        if(!this.props.activeChannel || this.props.activeChannel.id !== undefined) {
+        if(this.props.activeChannel.id !== undefined) {
             input = (
                 <input 
                     ref='message'
